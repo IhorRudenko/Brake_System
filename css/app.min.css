@@ -1794,11 +1794,13 @@ body {
   .menu__body {
     top: 4.0625rem;
     left: -100%;
-    height: calc(100dvh - 7.8125rem);
+    top: 0;
+    height: calc(100dvh - 3.75rem);
   }
   [data-fls-menu-open] .menu__body {
-    top: 4.0625rem;
+    top: 0;
     left: 0;
+    height: calc(100dvh - 3.75rem);
   }
   .icon-menu span, .icon-menu::before, .icon-menu::after {
     display: none;
@@ -1932,10 +1934,11 @@ body {
     opacity: 1;
     visibility: visible;
     transition: all 0.3s linear;
-    height: calc(100dvh - 7.8125rem);
+    height: calc(100dvh - 3.75rem);
   }
   .favorit-box.active {
-    top: calc(-100dvh + 7.8125rem) !important;
+    top: calc(-100dvh + 3.75rem) !important;
+    height: calc(100dvh - 3.75rem);
     transition: all 0.3s linear;
   }
   .favorit-box__title {

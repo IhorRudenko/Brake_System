@@ -5580,13 +5580,13 @@ burger.addEventListener("click", () => {
 const searchMobile = document.getElementById("header__search-mobile");
 const searchBox = document.querySelector(".header__search-box");
 searchMobile.addEventListener("click", (e) => {
+  e.preventDefault();
   e.stopPropagation();
   searchMobile.classList.toggle("active");
   searchBox.classList.toggle("active");
 });
 document.addEventListener("click", (e) => {
-  const isClickInsideSearch = searchMobile.contains(e.target) || searchBox.contains(e.target);
-  if (!isClickInsideSearch) {
+  if (!searchMobile.contains(e.target) && !searchBox.contains(e.target)) {
     searchMobile.classList.remove("active");
     searchBox.classList.remove("active");
   }
