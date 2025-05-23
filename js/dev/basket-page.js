@@ -1,4 +1,5 @@
 import "./app.min.js";
+import "./popup.min.js";
 import "./cataloge.min.js";
 document.addEventListener("DOMContentLoaded", function() {
   const cartItems = document.querySelectorAll(".basket__item");

@@ -1,5 +1,7 @@
 import "./app.min.js";
 import "./slider.min.js";
+import "./popup.min.js";
+/* empty css           */
 /*!
  * lightgallery | 2.8.3 | March 1st 2025
  * http://www.lightgalleryjs.com/

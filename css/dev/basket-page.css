@@ -126,12 +126,32 @@
   background-image: url(../assets/img/basket/trash.webp);
 }
 
+.contacts-form__sublist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  border: none;
+  padding: 0.625rem 0 0.3125rem;
+  border-bottom: 0.125rem solid #D7D7D7;
+}
+
+.contacts-form__sublist-item {
+  color: #404040;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0.625rem;
+  transition: background-color 0.2s ease-in-out;
+}
+.contacts-form__sublist-item:hover {
+  transition: background-color 0.2s ease-in-out;
+  background-color: #C7C7C7;
+}
 @media (max-width: 90rem){
   .basket__body {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media (max-width: 74.99875rem){
   .basket__body {
     display: flex;
@@ -139,13 +159,11 @@
     width: 100%;
   }
 }
-
 @media (max-width: 74.99875em){
   .basket__body {
     gap: 1.875rem;
   }
 }
-
 @media (max-width: 47.99875em){
   .basket__text {
     font-size: 0.8125rem;
@@ -154,7 +172,6 @@
     font-size: 1.0625rem;
   }
 }
-
 @media (max-width: 42.5rem){
   .basket__item {
     padding: 0.5rem;
@@ -185,7 +202,6 @@
     background-size: 1.125rem;
   }
 }
-
 @media (max-width: 29.99875em){
   .basket__message {
     margin-bottom: 1.25rem;
@@ -197,43 +213,36 @@
     font-size: 0.6875rem;
   }
 }
-
 @media (min-width: 29.99875em) and (max-width: 74.99875em){
   .basket__message {
     font-size: clamp( 1rem , 0.833340277775rem  +  0.5555555556vw , 1.25rem );
   }
 }
-
 @media (min-width: 47.99875em) and (max-width: 90em){
   .quantity-input {
     font-size: clamp( 1.0625rem , 0.7053770721125rem  +  0.7440254754vw , 1.375rem );
   }
 }
-
 @media (min-width: 47.99875em) and (max-width: 61.99875em){
   .basket__text {
     font-size: clamp( 0.8125rem , -0.25890066964375rem  +  2.2321428571vw , 1.125rem );
   }
 }
-
 @media (min-width: 61.99875em){
   .basket__text {
     font-size: 1.125rem;
   }
 }
-
 @media (min-width: 74.99875em) and (max-width: 90em){
   .basket__body {
     gap: clamp( 1.875rem , -16.8731251562375rem  +  24.9979168403vw , 5.625rem );
   }
 }
-
 @media (min-width: 74.99875em){
   .basket__message {
     font-size: 1.25rem;
   }
 }
-
 @media (min-width: 90em){
   .basket__body {
     gap: 5.625rem;

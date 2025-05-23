@@ -555,7 +555,7 @@ if (document.querySelector("[data-fls-like]")) {
   });
 }
 export {
-  bodyLock as a,
-  bodyLockStatus as b,
-  bodyUnlock as c
+  bodyUnlock as a,
+  bodyLock as b,
+  bodyLockStatus as c
 };
